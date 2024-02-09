@@ -1,4 +1,14 @@
+.bio-card {
+  border: none;
+}
+
+.bio-img {
+  border-radius: 50%;
+}
+
 .social-icon {
+  margin: 0;
+  padding: 0;
   height: 10vmin;
   transition: transform 200ms ease-in-out;
 }
@@ -13,4 +23,31 @@
 
 .emphasis {
   font-weight: bolder;
+}
+
+/* md screens and up */
+@media (min-width: 768px) {
+  .social-icon {
+    height: 8vmin;
+  }
+
+  .bio-img {
+    width: 35vmin;
+  }
+}
+
+/* sm screens */
+@media (max-width: 768px) {
+  .social-icon {
+    height: 8vmin;
+  }
+
+  .bio-img {
+    width: 25vmin;
+  }
+}
+
+/* xs screens */
+@media (max-width: 576px) {
+
 }
