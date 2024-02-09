@@ -1,0 +1,16 @@
+.social-icon {
+  height: 10vmin;
+  transition: transform 200ms ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.bio-text {
+  text-align: left;
+}
+
+.emphasis {
+  font-weight: bolder;
+}
