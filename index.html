@@ -30,9 +30,9 @@
     <section class="hero p-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h1 class="display-1">Abigail Dawson</h1>
-            <h2 class="display-4">Software Engineer</h2>
+          <div class="col-md-6 d-flex flex-column align-items-start gy-3">
+            <h1 class="display-2">Abigail Dawson</h1>
+            <h2 class="display-8">Software Engineer</h2>
             <p class="lead">I'm passionate about education and languages, and excited about making a positive impact on others through high quality software solutions.</p>
             <a href="#" class="btn btn-primary">View Portfolio</a>
           </div>
@@ -47,9 +47,110 @@
         </div>
       </div>
     </section>
+    <section class="featured-work">
+      <h2 class="display-6 text-center mb-5">Featured Work</h2>
+      <div class="carousel-container">
+        <div class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper">
+                <h2>Slide 1</h2>
+                <p>This is the content of slide 1.</p>
+                <a href="#carousel__slide4"
+                  class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2"
+                  class="carousel__next">Go to next slide</a>
+              </div>
+            </li>
+            <li id="carousel__slide2"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide1"
+                class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide3"
+                class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide3"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide2"
+                class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide4"
+                class="carousel__next">Go to next slide</a>
+            </li>
+            <li id="carousel__slide4"
+                tabindex="0"
+                class="carousel__slide">
+              <div class="carousel__snapper"></div>
+              <a href="#carousel__slide3"
+                class="carousel__prev">Go to previous slide</a>
+              <a href="#carousel__slide1"
+                class="carousel__next">Go to first slide</a>
+            </li>
+          </ol>
+          <aside class="carousel__navigation">
+            <ol class="carousel__navigation-list">
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide1"
+                  class="carousel__navigation-button">Go to slide 1</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide2"
+                  class="carousel__navigation-button">Go to slide 2</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide3"
+                  class="carousel__navigation-button">Go to slide 3</a>
+              </li>
+              <li class="carousel__navigation-item">
+                <a href="#carousel__slide4"
+                  class="carousel__navigation-button">Go to slide 4</a>
+              </li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
   </main>
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+<!-- <section class="featured-project">
+  <div class="container">
+    <div class="row">
+      <div>
+        <h2 class="display-6 text-center mb-5">Currently excited about ...</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <img src="./assets/kn-logo.png" class="img-fluid" alt="KnowNative logo">
+      </div>
+      <div class="col-8">
+        <h3>KnowNative</h3>
+        <p>KnowNative is a web application for learners of traditional Chinese to improve their reading comprehension through studying native language texts.</p>
+        <p>Designed to move learners away from dry textbook material into the world of real language, KnowNative provides a means to easily study from authentic texts and articles written by native speakers.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Express.js</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">Google Cloud Translate API</span>
+          <span class="tech-tag">OpenAI API</span>
+          <span class="tech-tag">MUI Components</span>
+        </div>
+        <a href="#" class="btn btn-primary">More</a>
+      </div>
+    </div>
+  </div>
+</section> -->
