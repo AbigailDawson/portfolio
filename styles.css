@@ -2,8 +2,9 @@
   border: none;
 }
 
-.bio-img {
-  border-radius: 50%;
+.social-icons {
+  border-top: 4px solid black;
+  padding: 2vmin;
 }
 
 .social-icon {
@@ -27,6 +28,8 @@
 
 /* md screens and up */
 @media (min-width: 768px) {
+
+
   .social-icon {
     height: 8vmin;
   }
@@ -38,12 +41,21 @@
 
 /* sm screens */
 @media (max-width: 768px) {
+
+  .social-icons {
+    border: none;
+    position: absolute;
+    right: 0;
+    top: -7px;
+  }
+
   .social-icon {
     height: 8vmin;
   }
 
   .bio-img {
-    width: 25vmin;
+    position: absolute;
+    visibility: hidden;
   }
 }
 

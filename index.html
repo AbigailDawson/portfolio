@@ -11,16 +11,15 @@
   <header>
     <nav class="navbar navbar-expand-md bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Abigail Dawson</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About Me</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Experience</a>
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link active me-5" aria-current="page" href="#">Home</a>
+            <a class="nav-link me-5" href="#">About</a>
+            <a class="nav-link me-5" href="#">Portfolio</a>
+            <a class="nav-link me-5" href="#">Resume</a>
             <a class="nav-link" href="#">Contact</a>
           </div>
         </div>
@@ -28,31 +27,26 @@
     </nav>
   </header>
   <main>
-    <div class="container text-center">
-      <div class="row justify-content-start">
-        <div class="col-sm-5">
-          <div class="card align-items-center bio-card">
-            <img src="./assets/bio-img-blk.jpg" class="card-img-top bio-img" alt="Headshot">
-            <div class="card-body">
-              <h4 class="card-title">Abigail Dawson</h4>
-              <lead class="card-text">Software Engineer</lead>
-            </div>
-            <div class="social-icons">
+    <section class="hero p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="display-1">Abigail Dawson</h1>
+            <h2 class="display-4">Software Engineer</h2>
+            <p class="lead">I'm passionate about education and languages, and excited about making a positive impact on others through high quality software solutions.</p>
+            <a href="#" class="btn btn-primary">View Portfolio</a>
+          </div>
+          <div class="col-md-6 d-flex flex-column align-items-center">
+            <img src="./assets/bio-img-transparent.png" class="img-fluid bio-img" alt="Hero image" style="max-width: 300px">
+            <div class="social-icons d-flex justify-content-center" style="width: 300px">
               <a href="https://www.linkedin.com/in/abigaildawsondev/" target="_blank"><img src="./assets/icons8-linkedin.svg" class="social-icon" alt="LinkedIn logo" /></a>
               <a href="https://github.com/AbigailDawson" target="_blank"><img src="./assets/icons8-github.svg" class="social-icon" alt="GitHub logo"/></a>
               <a href="https://www.youtube.com/channel/UCC6Wd5eRapebSzSGrXWPyNQ" target="_blank"><img src="./assets/icons8-youtube.svg" class="social-icon" alt="YouTube logo" /></a>
             </div>
           </div>
         </div>
-        <div class="col-sm-7 bio-text">
-          <h1>Hi, I'm Abigail!</h1>
-          <h3>I'm passionate about <span class="emphasis">education</span> and <span class="emphasis">languages</span>, and I get excited about making a <span class="emphasis">positive impact</span> on others through high quality software solutions.</h3>
-          <h3>Learn more about my current project:</h3>
-
-        </div>
-        
       </div>
-    </div>
+    </section>
   </main>
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
