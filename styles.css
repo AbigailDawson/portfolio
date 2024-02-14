@@ -10,7 +10,8 @@
   --accent: #008080;
   --btn-text: #C7D1CC;
   --btn: #055151;
-  --taupe: #aab9bc;
+  --section1: #aab9bc;
+  --section2: #bdcac7;
 }
 
 a {
@@ -88,7 +89,7 @@ body {
 /* featured project section */
 
 .featured-project {
-  background-color: var(--taupe);
+  background-color: var(--section1);
 }
 
 .portfolio-link {
@@ -123,22 +124,30 @@ body {
 
 /* portfolio section */
 
+.portfolio {
+  background-color: var(--section2);
+}
+
 .portfolio-card {
   position: relative;
   overflow: hidden;
+  box-shadow: 4px 4px 11px -8px rgba(0,0,0,0.9);
+  border: none;
   transition: transform 0.3s ease-in-out;
 }
 
 .portfolio-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  cursor: pointer
 }
 
 .portfolio-card img {
   transition: transform 0.3s ease-in-out;
 }
 
-.portfolio-card:hover img {
-  filter: brightness(70%);
+.portfolio-card:hover img, 
+.portfolio-card:hover .card-body {
+  filter: brightness(30%);
 }
 
 .overlay {
@@ -150,8 +159,27 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
+.see-more-btn {
+  margin-bottom: 5vmin;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
 .portfolio-card:hover .overlay {
   opacity: 1;
+}
+
+.card-body {
+  background-color: var(--section1);
+}
+
+.card-body > h6 {
+  font-size: 1.2rem;
+  margin-bottom: 2vmin;
 }
 
 /* md screens and up */
