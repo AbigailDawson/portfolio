@@ -1,5 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #C7D1CC;
+  --text: #132e30;
+  --accent: #008080;
+  --btn-text: #C7D1CC;
+  --btn: #055151;
+  --taupe: #aab9bc;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.heading-font {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.accent {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.navbar {
+  background-color: var(--bg);
+}
+
+.nav-link {
+  color: var(--text);
+}
+
+/* hero section */
+
 .hero {
   margin-top: 12vmin;
+}
+
+.hero-btn {
+  margin-left: 1vmin;
+  padding-bottom: .1vmin;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--btn);
+  transition: transform 200ms ease-in-out;
+}
+
+.hero-btn:hover {
+  transform: scaleX(1.1);
+  border-bottom: 2px solid var(--accent);
 }
 
 .bio-card {
@@ -26,8 +85,26 @@
   text-align: left;
 }
 
-.emphasis {
-  font-weight: bolder;
+/* featured project section */
+
+.featured-project {
+  background-color: var(--taupe);
+}
+
+.portfolio-link {
+  align-self: center;
+  color: var(--btn);
+  font-weight: 600;
+  padding-bottom: .1vmin;
+  margin: 0 0 0 3vmin;
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--btn);
+  transition: transform 200ms ease-in-out;
+}
+
+.portfolio-link:hover {
+  transform: scaleX(1.1);
+  border-bottom: 2px solid var(--accent);
 }
 
 .tech-tags {
@@ -43,6 +120,8 @@
   padding: 5px 8px;
   font-size: .8rem;
 }
+
+/* portfolio section */
 
 .portfolio-card {
   position: relative;
