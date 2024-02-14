@@ -12,6 +12,14 @@
   --btn: #055151;
   --section1: #aab9bc;
   --section2: #bdcac7;
+  --light: #e3e7e6;
+}
+
+body .featured-project,
+body .portfolio,
+body .resume,
+body .about {
+  padding: 8vmin 0 16vmin 0;
 }
 
 a {
@@ -88,7 +96,8 @@ body {
 
 /* featured project section */
 
-.featured-project {
+.featured-project,
+.resume {
   background-color: var(--section1);
 }
 
@@ -130,7 +139,8 @@ body {
 
 /* portfolio section */
 
-.portfolio {
+.portfolio,
+.about {
   background-color: var(--section2);
 }
 
@@ -186,6 +196,62 @@ body {
 .card-body > h6 {
   font-size: 1.2rem;
   margin-bottom: 2vmin;
+}
+
+/* resume section */
+.job-card {
+  background-color: var(--light);
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.job-title {
+  color: var(--btn);
+  font-weight: bold;
+}
+
+.company-name {
+  color: #495057;
+}
+
+.job-duration {
+  color: #6c757d;
+}
+
+.job-description {
+  margin-top: 10px;
+}
+
+/* about section */
+
+.about-img {
+  width: 100%;
+  height: 150px; /* Set a fixed height for the images */
+  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+  border-radius: 8px;
+  overflow: hidden; /* Hide any overflow to ensure consistent size */
+  max-width: 100%; /* Ensure images don't exceed their container width */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.sub-heading {
+  color: var(--btn);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 /* md screens and up */
