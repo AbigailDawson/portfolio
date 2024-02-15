@@ -203,7 +203,7 @@ body {
 } */
 
 .card-body {
-  background-color: var(--section1);
+  background-color: var(--light);
 }
 
 .card-body > h6 {
