@@ -45,10 +45,20 @@ body {
 
 .navbar {
   background-color: var(--bg);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link {
   color: var(--text);
+  transition: color 200ms ease-in-out;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--accent);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent);
 }
 
 /* hero section */
@@ -227,19 +237,20 @@ body {
 /* about section */
 
 .about-img {
+  margin: 0 auto;
   width: 100%;
-  height: 150px; /* Set a fixed height for the images */
-  object-fit: cover; /* Maintain aspect ratio and crop if necessary */
-  border-radius: 8px;
-  overflow: hidden; /* Hide any overflow to ensure consistent size */
-  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: 50vmin;
+  object-fit: cover; 
+  border-radius: 2rem;
+  overflow: hidden; 
+  max-width: 80%; 
 }
 
 .image-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-}
+}  
 
 .image-grid img {
   width: 100%;
@@ -252,6 +263,65 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 20px;
+}
+
+/* contact section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-links > a {
+  color: var(--btn);
+  font-size: 2.3vmin;
+  transition: transform 200ms ease-in-out;
+}
+
+.contact-links > a:hover {
+  font-size: 1.2rem;
+  transform: scale(1.1);
+}
+
+/* contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 60%;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #006666;
 }
 
 /* md screens and up */
@@ -291,3 +361,5 @@ body {
 @media (max-width: 576px) {
 
 }
+
+  

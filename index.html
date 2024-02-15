@@ -11,19 +11,19 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-md">
+  <header id="top">
+    <nav class="navbar navbar-expand-md fixed-top">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
-            <a class="nav-link active me-5 heading-font" aria-current="page" href="#">Home</a>
-            <a class="nav-link me-5 heading-font" href="#">Portfolio</a>
-            <a class="nav-link me-5 heading-font" href="#">Resume</a>
-            <a class="nav-link me-5 heading-font" href="#">About</a>
-            <a class="nav-link heading-font" href="#">Contact</a>
+            <a class="nav-link me-5 heading-font" aria-current="page" href="#top">Home</a>
+            <a class="nav-link me-5 heading-font" href="#portfolio">Portfolio</a>
+            <a class="nav-link me-5 heading-font" href="#resume">Resume</a>
+            <a class="nav-link me-5 heading-font" href="#about">About</a>
+            <a class="nav-link heading-font" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
             <h1 class="display-2 mb-3 heading-font">Abigail Dawson</h1>
             <h2 class="display-8 mb-4 heading-font">Software Engineer</h2>
             <p class="lead mb-5">I'm passionate about <span class="accent">education</span> and <span class="accent">languages</span>, and excited about making a positive impact on others through high quality software solutions.</p>
-            <div class="hero-btn heading-font"><a href="#">See my work</a></div>
+            <div class="hero-btn heading-font"><a href="#featured-project">See my work</a></div>
           </div>
           <div class="col-md-5 d-flex flex-column align-items-center">
             <img src="./assets/bio-img-transparent.png" class="img-fluid bio-img" alt="Hero image" style="max-width: 300px">
@@ -50,7 +50,7 @@
         </div>
       </div>
     </section>
-    <section class="featured-project">
+    <section class="featured-project" id="featured-project">
       <div class="container">
         <div class="row mb-3">
           <h2 class="mb-5 text-center">I'm currently excited about ...</h2>
@@ -89,7 +89,7 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="row mb-3">
@@ -150,7 +150,7 @@
         </div>
       </div>
     </section>
-    <section class="resume">
+    <section class="resume" id="resume">
       <div class="container">
         <div class="row">
           <h1 class="mb-5 text-center">Resume</h1>
@@ -195,37 +195,57 @@
         </div>      
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="row">
           <h1 class="mb-5 text-center">About Me</h1>
         </div>
         <div class="row">
-            <div class="image-grid">
-              <img src="./assets/about1.jpg" class="img-fluid about-img" alt="Image 1">
-              <img src="./assets/about2.jpg" class="img-fluid about-img" alt="Image 3">
-              <img src="./assets/about3.jpg" class="img-flui about-imgd" alt="Image 2">
-              <img src="./assets/about4.jpg" class="img-fluid about-img" alt="Image 4">
-            </div>
+          <img src="./assets/about1.jpg" class="img-fluid about-img" alt="Image 1">
         </div>
         <div class="row">
-          <p class="sub-heading">Transitioning into tech</p>
-          <p>After seeing the impact of my work on an individual level, I was craving a way to make an impact on an even larger scale. With an aptitude for technology and an interest in coding, I made the decision to pivot towards the tech industry, excited to build skills in software development and learn how to create applications and work on meaningful projects. Learning to code has meant equipping myself with the real tools I need to bring my own ideas into the world through my own creativity, and contribute to the important work of others before me.</p>
-          <!-- <h2>Main Heading</h2> -->
           <p class="sub-heading">Lifelong learning</p>
           <p>I grew up in Haverford PA, where my world revolved around reading books, writing stories and spending time with horses. I fell in love with learning Latin in middle school, and in college I dedicated myself to the study of Japanese, which intrigued me even more with its grammatical intricacies and complex characters.</p>
           <p>Fascinated by East Asian culture and my new ability to communicate with others in their own native language, I taught myself traditional Chinese and spent a year in Taiwan before returning to purse an M.A. in Asian Studies at Georgetown University.</p>
           <p class="sub-heading">Exploration</p>
           <p>Following this period of rigorous academic study, I dedicated myself to what had previously been a hobby — teaching therapeutic horseback riding lessons for people with special needs, and working on the administrative side of the non-profit organizations operating these programs. Meanwhile, I continued to develop my cross-cultural communication skills while tutoring English online to adult second language learners.</p>
           <p>Ultimately, seeking more opportunities to grow personally while learning more about the experiences of others, I embarked on a cross-country trip with my partner and our five pets. Throughout my travels, I experienced life and work in different parts of the country, mixed in with epic mountain biking adventures.</p>
+          <p class="sub-heading">Transitioning into tech</p>
+          <p>After seeing the impact of my work on an individual level, I was craving a way to make an impact on an even larger scale. With an aptitude for technology and an interest in coding, I made the decision to pivot towards the tech industry, excited to build skills in software development and learn how to create applications and work on meaningful projects. Learning to code has meant equipping myself with the real tools I need to bring my ideas into the world through my own creativity, and contribute to the important work of others before me.</p>
         </div>
         </div>
       </div>
     </section>
+    <section class="contact py-5 mb-5" id="contact">
+      <div class="container-fluid contact-section text-center">
+        <h2>Let's get in touch!</h2>
+        <div class="email mt-4 mb-3 accent">
+            <h4>abigaildawson.dev@gmail.com</h4>
+        </div>
+        <div class="contact-links d-flex flex-row justify-content-around">
+          <a href="https://www.linkedin.com/in/abigaildawsondev/" target="_blank"><img src="./assets/icons8-linkedin.svg" class="social-icon" alt="LinkedIn logo" /> /AbigailDawsonDev</a>
+          <a href="https://github.com/AbigailDawson" target="_blank"><img src="./assets/icons8-github.svg" class="social-icon" alt="GitHub logo"/> /AbigailDawson</a>
+          <a href="https://www.youtube.com/channel/UCC6Wd5eRapebSzSGrXWPyNQ" target="_blank"><img src="./assets/icons8-youtube.svg" class="social-icon" alt="YouTube logo" /> @abigaildawson_dev</a>
+        </div>
+        <div class="mt-5 mb-2 accent">
+          <h5>Quick question or comment? Send me a message!</h5>
+        </div>
+        <form class="mt-4" id="contactForm" action="https://formspree.io/f/xeqygzqw" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+    
+          <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer>
-    <h1 class="m-5">footer text</h1>
-  </footer>
+  <script type="module" src="./main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
