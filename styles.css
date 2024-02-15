@@ -105,7 +105,8 @@ body {
 /* featured project section */
 
 .featured-project,
-.resume {
+.resume,
+.contact {
   background-color: var(--section1);
 }
 
