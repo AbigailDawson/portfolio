@@ -5,14 +5,14 @@
 }
 
 :root {
-  --bg: #dfe7e3;
+  --bg: #e9f1ed;
   --text: #132e30;
   --accent: #008080;
   --btn-text: #C7D1CC;
   --btn: #055151;
-  --section1: #cbd7d9;
-  --section2: #d7e4e1;
-  --light: #e3e7e6;
+  --section1: #d1e3e6;
+  --section2: #dfebe8;
+  --light: #ecf2f1;
 }
 
 body .featured-project,
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar {
-  background-color: var(--bg);
+  background-color: var(--section2);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -170,7 +170,7 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.portfolio-card:hover img, 
+/* .portfolio-card:hover img, 
 .portfolio-card:hover .card-body {
   filter: brightness(30%);
 }
@@ -186,7 +186,7 @@ body {
 
 .see-more-btn {
   margin-bottom: 5vmin;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background-color: transparent;
   color: white;
   border: none;
@@ -200,7 +200,7 @@ body {
 
 .portfolio-card:hover .overlay {
   opacity: 1;
-}
+} */
 
 .card-body {
   background-color: var(--section1);
