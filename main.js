@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', () => {
     let currentSection = '';
 
-    // Find the current section based on scroll position
     document.querySelectorAll('section').forEach(section => {
       const sectionTop = section.offsetTop - 50;
       const sectionBottom = section.offsetTop + section.clientHeight - 50;
@@ -14,9 +13,29 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
-    // Set active class to the corresponding navbar link
     navbarLinks.forEach(link => {
       link.classList.toggle('active', link.getAttribute('href').substring(1) === currentSection);
     });
   });
 });
+
+function submitForm(event) {
+  event.preventDefault();
+  const form = document.getElementById("contactForm");
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+}
