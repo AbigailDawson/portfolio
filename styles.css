@@ -340,6 +340,51 @@ button:hover {
   }
 }
 
+/* knownative */
+.display-3,
+.display-4 {
+  color: var(--accent);
+}
+
+.project-introduction img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.lead {
+  font-size: 1.25rem;
+}
+
+.inspiration-backstory img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.development-steps .step {
+  margin-bottom: 2rem;
+}
+
+.future-developments ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.video-demo {
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: var(--btn);
+  color: var(--btn-text);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+}
+
 /* sm screens */
 @media (max-width: 768px) {
 
