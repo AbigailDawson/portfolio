@@ -212,6 +212,15 @@ body {
 }
 
 /* resume section */
+
+.download-btn {
+  transition: transform 200ms ease-in-out;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+}
+
 .job-card {
   background-color: var(--light);
   border: 1px solid #dee2e6;
@@ -235,6 +244,36 @@ body {
 
 .job-description {
   margin-top: 10px;
+}
+
+.education {
+  margin-top: 40px;
+}
+
+.education-title {
+  color: var(--btn);
+  font-weight: bold;
+}
+
+.education-card {
+  background-color: var(--light);
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.education-institution {
+  color: var(--btn);
+  font-weight: bold;
+}
+
+.education-duration {
+  color: #6c757d;
+}
+
+.education-degree {
+  color: #495057;
 }
 
 /* about section */
