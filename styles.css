@@ -78,12 +78,16 @@ body {
   transform: scaleX(1.1);
 }
 
+.bio-img {
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+}
+
 .bio-card {
   border: none;
 }
 
 .social-icons {
-  border-top: 4px solid black;
   padding: 2vmin;
 }
 
