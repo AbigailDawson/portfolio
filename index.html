@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
   <link rel="stylesheet" href="./styles.css">
   <script defer src="./main.js"></script>
 
@@ -39,7 +41,8 @@
             <h1 class="display-2 mb-3 heading-font">Abigail Dawson</h1>
             <h2 class="display-8 mb-4 heading-font">Software Engineer</h2>
             <p class="lead mb-5">I'm passionate about <span class="accent">education</span> and <span class="accent">languages</span>, and excited about making a positive impact on others through high quality software solutions.</p>
-            <div class="hero-btn heading-font"><a href="#featured-project">See my work</a></div>
+            <div class="hero-btn heading-font"><a href="#featured-project">See my work <i class="bi bi-chevron-double-down" style="margin-left: 1vmin"></i>
+            </a></div>
           </div>
           <div class="col-md-5 d-flex flex-column align-items-center">
             <img src="./assets/bio-img-blk.jpg" class="img-fluid bio-img" alt="Hero image" style="max-width: 300px">
@@ -61,16 +64,14 @@
           <div class="col-12 col-md-7">
             <div class="kn-header d-flex flex-column align-items-start">
               <h1 class="kn-title">KnowNative</h1>
-              <div class="d-flex flex-wrap my-2">
-                <a href="https://knownative-730586de0f29.herokuapp.com/" target="_blank" class="portfolio-link heading-font me-4">Live Site</a>
-                <a href="https://github.com/AbigailDawson/knownative" target="_blank" class="portfolio-link heading-font me-4">GitHub</a>
-                <a href="https://www.youtube.com/watch?v=leRqMQnfa_4" target="_blank" class="portfolio-link heading-font">Video Demo</a>
-              </div>
+              
             </div>
             <div class="kn-desc text-left mt-3">
               <p>KnowNative is a <span class="accent">web application</span> for learners of traditional Chinese to improve their <span class="accent">reading comprehension</span> through studying native language texts.</p>
               <p>Inspired by my own experience self-studying Japanese and Chinese, I designed KnowNative to <span class="accent">help learners move away from dry textbook materials</span> and instead learn from real articles in their <span class="accent">target language</span>.</p>
             </div>
+            <div class="read-more-link heading-font">
+              <i class="bi bi-book" style="margin: 0 1.5vmin; font-size: 1.4rem"></i><a href="./knownative.html">Read more about my development process</a></div>
             <div class="tech-tags d-flex justify-content-start mt-5">
               <span class="tech-tag">React</span>
               <span class="tech-tag">JavaScript</span>
@@ -85,8 +86,12 @@
             </div>
           </div>
           <div class="col-12 col-md-5">
+            <div class="d-flex flex-wrap justify-content-center my-4">
+              <a href="https://knownative-730586de0f29.herokuapp.com/" target="_blank" class="hero-btn portfolio-btn heading-font me-2">Live Site</a>
+              <a href="https://github.com/AbigailDawson/knownative" target="_blank" class="hero-btn portfolio-btn heading-font me-2">GitHub</a>
+              <a href="https://www.youtube.com/watch?v=leRqMQnfa_4" target="_blank" class="hero-btn portfolio-btn heading-font">Video Demo</a>
+            </div>
             <img src="./assets/kn-runthru.gif" class="img-fluid walkthru-video" alt="KnowNative logo">
-            <div class="hero-btn kn-btn heading-font mt-5"><a href="./knownative.html">Read about my development process</a></div>
           </div>
         </div>
       </div>
@@ -241,12 +246,13 @@
         <div class="row">
           <p class="sub-heading">Lifelong learning</p>
           <p>I grew up in Haverford PA, where my world revolved around reading books, writing stories and spending time with horses. I fell in love with learning Latin in middle school, and in college I dedicated myself to the study of Japanese, which intrigued me even more with its grammatical intricacies and complex characters.</p>
-          <p>Fascinated by East Asian culture and my new ability to communicate with others in their own native language, I taught myself traditional Chinese and spent a year in Taiwan before returning to purse an M.A. in Asian Studies at Georgetown University.</p>
+          <p>Fascinated by East Asian culture and my new ability to communicate with others in their own native language, I taught myself traditional Chinese and spent a year in Taiwan before returning to pursue an M.A. in Asian Studies at Georgetown University.</p>
           <p class="sub-heading">Exploration</p>
-          <p>Following this period of rigorous academic study, I dedicated myself to what had previously been a hobby — teaching therapeutic horseback riding lessons for people with special needs, and working on the administrative side of the non-profit organizations operating these programs. Meanwhile, I continued to develop my cross-cultural communication skills while tutoring English online to adult second language learners.</p>
-          <p>Ultimately, seeking more opportunities to grow personally while learning more about the experiences of others, I embarked on a cross-country trip with my partner and our five pets. Throughout my travels, I experienced life and work in different parts of the country, mixed in with epic mountain biking adventures.</p>
+          <p>Following this period of rigorous academic study, I decided to pivot back toward my passion for education and horses, and began teaching therapeutic horseback riding lessons for people with special needs. Shortly after I began finding ways to apply my technical and organizational skills to the administrative side of these non-profit programs as well. Meanwhile, I continued to develop my cross-cultural communication skills while tutoring English online to adult second language learners.</p>
+          <p>In 2022, seeking more opportunities to grow personally while learning more about the experiences of others, I embarked on a cross-country trip with my partner and our five pets. For an entire year, I explored Arizona, Washington, British Columbia and North Carolina, living and working in these areas while enjoying epic mountain biking adventures in the wilderness.</p>
           <p class="sub-heading">Transitioning into tech</p>
-          <p>After seeing the impact of my work on an individual level, I was craving a way to make an impact on an even larger scale. With an aptitude for technology and an interest in coding, I made the decision to pivot towards the tech industry, excited to build skills in software development and learn how to create applications and work on meaningful projects. Learning to code has meant equipping myself with the real tools I need to bring my ideas into the world through my own creativity, and contribute to the important work of others before me.</p>
+          <p>After seeing the impact of my work on an individual level, I was craving a way to make an impact on the communities I cared about on an even larger scale. With an aptitude for technology and some experience with coding, I made the decision to pivot towards the tech industry, eager to build skills in software development and learn how to create applications and work on meaningful projects.</p>
+          <p>I found that just like learning Japanese and Chinese, picking up new programming languages came naturally to me, and the more I learned, the more empowered I felt to hone my skills and create the kinds of programs I wanted to see in the world. Learning to code has allowed me to unleash my creativy in a new and meaningful way, and has been a natural progression in my journey of personal development. I am thrilled to now be applying the tools I've learned to create my own applications, and to contribute to the important and exciting work of others.</p>
         </div>
         </div>
       </div>
