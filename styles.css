@@ -221,11 +221,9 @@ body {
 /* resume section */
 
 .download-btn {
-  transition: transform 200ms ease-in-out;
-}
-
-.download-btn:hover {
-  transform: scale(1.05);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 8px 18px;
 }
 
 .job-card {
