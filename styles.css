@@ -22,6 +22,18 @@ body .about {
   padding: 8vmin 0 16vmin 0;
 }
 
+.ch {
+  width: 80ch;
+  margin: 0 auto;
+}
+
+.ch-left {
+  width: 80ch;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 0;
+}
+
 a {
   text-decoration: none;
   color: var(--accent);
@@ -235,7 +247,8 @@ body {
   border: 1px solid #dee2e6;
   border-radius: 8px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 10vmin 20px 10vmin;
+  width: 80%;
 }
 
 .job-title {
@@ -262,6 +275,8 @@ body {
 .education-title {
   color: var(--btn);
   font-weight: bold;
+  margin: 0 10vmin 20px 10vmin;
+
 }
 
 .education-card {
@@ -269,7 +284,7 @@ body {
   border: 1px solid #dee2e6;
   border-radius: 8px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 10vmin 20px 10vmin;
 }
 
 .education-institution {
@@ -400,6 +415,7 @@ button:hover {
     font-size: .8rem;
     padding: 1rem;
   }
+
 }
 
 /* sm screens */
@@ -421,7 +437,6 @@ button:hover {
     position: absolute;
     visibility: hidden;
   }
-
 
 }
 
