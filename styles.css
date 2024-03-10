@@ -376,6 +376,14 @@ button:hover {
   background-color: #006666;
 }
 
+/* KnowNative */
+
+.kn-ss,
+.chart-img,
+.kn-ss-caption {
+  width: 70%;
+}
+
 /* md screens and up */
 @media (max-width: 1000px) {
 
